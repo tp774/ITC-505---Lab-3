@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITC505 Lab 3 - Font Delivery</title>
+    <style>
+        @font-face {
+            font-family: 'Creepster';
+            src: url('assets/creepster.woff2') format('woff2'),
+                 url('assets/creepster.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        body {
+            font-family: 'Creepster', sans-serif;
+            font-size: 22px;
+            color: #333;
+        }
+
+        h1 {
+            color: #FF6347; /* Tomato red color for added effect */
+        }
+    </style>
+</head>
+<body>
+    <h1>How to Serve Custom Fonts</h1>
+    <p>In this example, I’m using the <strong>@font-face</strong> CSS rule to serve a custom font called "Creepster." It's a fun, spooky font that feels straight out of a Halloween movie poster. Creepster is bold and has a playful, eerie vibe to it—perfect for standing out in a crowd of boring fonts. By hosting the font on the server and delivering it when requested, users can see this unique font even if they don’t have it installed on their computer.</p>
+
+    <footer>
+        <p>Last updated: 
+            <span id="lastModified"></span>
+        </p>
+    </footer>
+    <script type="text/javascript">
+         var x = document.lastModified;
+         document.getElementById('lastModified').textContent = x;
+    </script>
+</body>
+</html>
